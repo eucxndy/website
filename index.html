@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Main</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-custom-dark {
+      background-color: #202020;
+    }
+    .social-btn {
+      background-color: #202020;
+      border: 1px solid #383838;
+      padding: 6px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .social-btn:hover {
+      background-color: #2a2a2a;
+    }
+    .social-btn img {
+      width: 30px;
+      height: 30px;
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #ccc;
+      font-size: 1rem;
+    }
+    .location img {
+      width: 20px;
+      height: 20px;
+    }
+    .border-custom {
+      border: 1px solid #383838;
+    }
+    .border-bottom-custom {
+      border-bottom: 1px solid #383838;
+    }
+    .border-avatar {
+      border: 3px solid #383838;
+    }
+  </style>
+</head>
+<body class="bg-black bg-cover bg-center min-h-screen flex items-center justify-center"
+      style="background-image: url('background.png');">
+
+  <nav class="fixed top-0 left-0 right-0 bg-custom-dark border-bottom-custom flex justify-between items-center px-5 py-3 z-50">
+    <div class="text-white font-bold text-lg select-none">eucxndy</div>
+    <div class="location">
+      <img src="pin.png" alt="Location Pin">
+      <span>Brazil</span>
+    </div>
+  </nav>
+
+  <div class="relative bg-custom-dark border-custom px-6 py-5 w-[520px] rounded-sm shadow-lg flex items-center gap-5">
+    <div class="flex-shrink-0 w-32 h-32 overflow-hidden rounded-sm border-avatar">
+      <img src="avatar.png" alt="Avatar" class="w-full h-full object-cover" />
+    </div>
+
+    <div class="flex flex-col justify-center space-y-4 text-gray-300">
+      <div>
+        <h1 class="text-white text-[1.9rem] font-semibold select-text">cxndy</h1>
+        <p class="text-gray-400 text-[1.2rem] font-light select-text" style="color: #b0b0b0;">
+          ahk scripter
+        </p>
+      </div>
+
+      <div class="flex space-x-3">
+        <a href="https://youtube.com/@eucxndy" class="social-btn" aria-label="YouTube" target="_blank">
+          <img src="youtube.png" alt="YouTube">
+        </a>
+        <a href="https://twitch.tv/eucxndy" class="social-btn" aria-label="Twitch" target="_blank">
+          <img src="twitch.png" alt="Twitch">
+        </a>
+        <a href="https://instagram.com/eucxndy" class="social-btn" aria-label="Instagram" target="_blank">
+          <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/eucxndy" class="social-btn" aria-label="X" target="_blank">
+          <img src="x.png" alt="X">
+        </a>
+        <a href="https://discord.com/users/1339399098503139420" class="social-btn" aria-label="Discord" target="_blank">
+          <img src="discord.png" alt="Discord">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
